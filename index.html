@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="AnyFit project page.">
+  <meta name="keywords" content="Diffusion models, Multi-condition, Virtual try-on">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AnyFit: Controllable Virtual Try-on for Any Combination of Attire Across Any Scenario</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://github.com/colorful-liyu">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://focaldreamer.github.io">
+            FocalDreamer
+          </a>
+          <a class="navbar-item" href="https://github.com/colorful-liyu/3DQD">
+            3DQD
+          </a>
+          <a class="navbar-item" href="https://github.com/colorful-liyu/3DQD">
+            AnyFit
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">AnyFit: Controllable Virtual Try-on for Any Combination of Attire Across Any Scenario</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://github.com/colorful-liyu">Yuhan Li</a><sup>1,*</sup>,</span>
+            <span class="author-block">
+              <a>Hao Zhou</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a>Wenxiang Shang</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a>Ran Lin</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://github.com/neuralchen">Xuanhong Chen</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a>Bingbing Ni</a><sup>1, **</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Shanghai Jiao Tong University,</span>
+            <span class="author-block"><sup>2</sup>Alibaba</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>*</sup> work done during an internship at Alibaba. &nbsp &nbsp</span>
+            <span class="author-block"><sup>**</sup> corresponding author.</span>
+          </div
+
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="./static/my_fig/AnyFit_Arxiv.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- need change. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2308.10608"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>ArXiv</span>
+                </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="my-hr">
+  <hr>
+</div>
+
+
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+      <div class="container">
+          <div class="item item-steve">
+          <img src="./static/my_fig/teaser.png"  width="100%">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <p>
+      </p>
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+
+          <p>
+            While image-based virtual try-on has made significant strides, emerging approaches still fall short of delivering high-fidelity and robust fitting images across 
+            various scenarios, as their models suffer from issues of ill-fitted garment styles and quality degrading during the training process, not to mention the 
+            lack of support for various combinations of attire. Therefore, we first propose a lightweight, scalable, operator known as Hydra Block for attire combinations. 
+            This is achieved through a parallel attention mechanism that facilitates the feature injection of multiple garments from conditionally encoded branches into the 
+            main network. Secondly, to significantly enhance the model's robustness and expressiveness in real-world scenarios, we evolve its potential across diverse settings 
+            by synthesizing the residuals of multiple models, as well as implementing a mask region boost strategy to overcome the instability caused by information leakage in 
+            existing models. 
+          </p>
+          <p>
+            Equipped with the above design, AnyFit surpasses all baselines on high-resolution benchmarks and real-world data by a large gap, excelling in producing well-fitting 
+            garments replete with photorealistic and rich details. Furthermore, AnyFit’s impressive performance on high-fidelity virtual try-ons in any scenario from any image, 
+            paves a new path for future research within the fashion community.
+          </p> 
+
+        </div>
+      </div>
+    </div>
+
+
+    <!--/ Abstract. -->
+
+    <hr>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">The good properties of AnyFit</h2>
+        <div class="content has-text-justified">
+          <p>
+            SCALABILITY: AnyFit supports multi-condition injection, allowing for easy expansion to more applications, such as mixing and matching tops and bottoms, layering inner and outer garments, etc.
+          </p>
+          <p>
+            ROBUSTNESS: Given the diverse scenarios encountered in e-commerce settings, AnyFit generates authentic fabric textures and natural lighting, reproducing the details of the target clothing (e.g., logos, patterns, texts and strips) stably and accurately.
+          </p>
+        </div> 
+        <div class="content has-text-justified">
+          <p>
+            AnyFit shows superior try-ons for any combination of attire across any scenario. It supports various of input types including shop-to-model, model-to-model, pattern-to-street, etc.
+          </p>
+        </div> 
+        <img width=100% src="./static/my_fig/fig4.png">
+        
+      </div>
+    </div>
+
+
+
+    <hr>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">How does it work?</h2>
+        
+        <img src="./static/my_fig/fig2.png">
+        <div class="content has-text-justified">
+          <p>
+            
+            As illustrated in the figure, AnyFit mainly consists of two isomorphic U-Nets, namely HydraNet and MainNet. The former is tasked with extracting fine-grained clothing features, while the latter is responsible for generating try-ons.
+          </p>
+          <p>
+            <b>Scalability</b>: A hallmark of AnyFit is its innovative introduction of the <b>Hydra Encoding Block</b> that only parallelizes attention matrices within a sharing HydraNet, enabling 
+            effortless expansion to any quantity of conditions with only 8\% increase in parameters for each additional branch. 
+          </p>
+          <p>
+            <b>Robustness</b>: Observations indicate a noticeable reduction in the robustness and quality of images generated by existing Virtual Try-On works. We present the <b>Prior Model Evolution</b> strategy. 
+            This innovative approach involves merging parameter variations within a model family, enabling the independent evolution of multiple capabilities of the base model.
+            Furthermore, we introduce the <b>Adaptive Mask Boost</b> to further enhance the fit of the attire as a bonus. It allows the model to autonomously understand the overall shape of 
+            the clothing, which emancipates the model from previous reliance on hints of masks derived from garments. 
+          </p>
+          
+        </div> 
+      </div>
+    </div>
+
+
+    <hr>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Single-garment try-on</h2>
+        <div class="content has-text-justified">
+          <p>
+            AnyFit excels in retaining intricate pattern details and shows the ability of filling in inner garments or unzips clothing based on posture automatically.
+          </p>      
+        </div> 
+        
+        <img src="./static/my_fig/fig16.png">
+        <hr>
+        <img src="./static/my_fig/fig17.png">
+        
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Multi-garment try-on</h2>
+        <div class="content has-text-justified">
+          <p>
+            AnyFit enables users to provide upper- and down-clothes simultaneously and generates the try-on results in one pass.
+          </p>      
+        </div> 
+        <img src="./static/my_fig/fig10.png">
+        
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">The role of text prompt in AnyFit</h2>
+        <div class="content has-text-justified">
+          <p>
+            In fact, we have discovered that text plays a certain role in controlling the overall try-on style. 
+            As show in the above figure, by adjusting the prompt, AnyFit is able to achieve variations in Virtual Try-On apparel styles.
+          </p>      
+        </div> 
+        <img src="./static/my_fig/fig8.png">
+      </div>
+    </div>
+
+  </div>   
+</section>  
+
+
+    <!--/ Matting. -->
+
+<!-- <div class="gif-group">
+  <div class="gif-images">
+    <img src="./static/gif/bread.gif">
+    <img src="./static/gif/bread_geo.gif">
+  </div>
+  <div class="gif-label">A delicious croissant</div>
+</div>
+
+<div class="gif-group">
+  <div class="gif-images">
+    <img src="./static/gif/bread.gif">
+    <img src="./static/gif/bread_geo.gif">
+  </div>
+  <div class="gif-label">Group 2</div>
+</div> -->
+
+
+<div class="my-hr">
+  <hr>
+</div>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+        @misc{xxx
+        }
+      </code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <!-- <div class="column is-8"> -->
+        <div class="content">
+          <p>
+            This website is constructed using the source code provided by <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> and <a href="https://mengtingchen.github.io/wear-any-way-page/">Wear-Any-Way</a>, 
+            allow us to express our appreciation for their contribution.                              
+          </p>
+    
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
