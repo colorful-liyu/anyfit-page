@@ -1,11 +1,17 @@
 # AnyFit
 
-This is the repository that contains source code for the webpage of [AnyFit]().
+This is the repository that contains source code for the webpage of [AnyFit](https://colorful-liyu.github.io/anyfit-page/).
 
 If you find AnyFit useful for your work please cite:
 ```
-
-
+      @misc{li2024anyfit,
+        title={AnyFit: Controllable Virtual Try-on for Any Combination of Attire Across Any Scenario}, 
+        author={Yuhan Li and Hao Zhou and Wenxiang Shang and Ran Lin and Xuanhong Chen and Bingbing Ni},
+        year={2024},
+        eprint={2405.18172},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV}
+  }
 ```
 
 # Website License
