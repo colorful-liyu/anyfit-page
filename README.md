@@ -4,14 +4,12 @@ This is the repository that contains source code for the webpage of [AnyFit](htt
 
 If you find AnyFit useful for your work please cite:
 ```
-      @misc{li2024anyfit,
-        title={AnyFit: Controllable Virtual Try-on for Any Combination of Attire Across Any Scenario}, 
-        author={Yuhan Li and Hao Zhou and Wenxiang Shang and Ran Lin and Xuanhong Chen and Bingbing Ni},
-        year={2024},
-        eprint={2405.18172},
-        archivePrefix={arXiv},
-        primaryClass={cs.CV}
-  }
+@article{li2024anyfit,
+  title={AnyFit: Controllable Virtual Try-on for Any Combination of Attire Across Any Scenario},
+  author={Li, Yuhan and Zhou, Hao and Shang, Wenxiang and Lin, Ran and Chen, Xuanhong and Ni, Bingbing},
+  journal={arXiv preprint arXiv:2405.18172},
+  year={2024}
+}
 ```
 
 # Website License
